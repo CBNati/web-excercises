@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <div class="headerBg"></div>
+    <div class="headerBg">
+        <form id="theme" action="index2.html">
+            <label for="favcolor">Select your favorite Theme:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#FFD700">
+            <input type="submit" value="Apply">
+        </form>
+    </div>
     <img id="topLogo" src="logo2.jpg" alt="fuchs">
     <title>D I V E R G E N T</title>
+    <br>
+    <form id="search" action="/action_page.php">
+        <label for="fname">Your Choice, Our Airways:</label><br>
+        <input type="text" id="fname" value="AIRBUS 360">
+        <input type="submit" value="Fly">
+    </form>
     <meta charset="UTF-8.0">
     <meta name="viewport"
           content="width=device-width,
@@ -13,7 +25,7 @@
 </head>
 <body>
 <br>
-<br>
+
 <h1><strong>D i v e r g e n t - A i r w a y s</strong></h1>
 <br>
 <br>
@@ -84,6 +96,19 @@
     </tr>
 </table>
 </div>
+<br>
+<iframe class="youtube" src="https://www.youtube.com/watch?v=KR7Rn0X69s8">
+</iframe>
+<form class="passport">
+    <label for="myfile">Upload Your Passport:</label>
+    <input type="file" id="myfile" name=".pdf,.jpeg">
+</form>
+<br>
+<form id="rate" action="/action_page.php" method="get">
+    <label for="vol">Rate our Airways [ Between 0 and 100 ]:</label>
+    <input type="range" id="vol" name="vol" min="0" max="100">
+    <input type="submit" value="Rate">
+</form>
 <br>
 <a href="index2.html">" Please Visit Our Shop "</a>
 </body>
