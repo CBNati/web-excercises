@@ -1,10 +1,10 @@
-#search{
+#search {
     color: darkred;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-#theme{
+#theme {
     position: absolute;
     color: darkred;
     z-index: 3;
@@ -140,7 +140,7 @@ div:hover p {
     color: yellowgreen;
 }
 
-#thelinks,#thelinks2:hover{
+#thelinks, #thelinks2:hover {
 
     color: cornflowerblue;
 }
@@ -155,13 +155,13 @@ div:hover p {
     height: 500px;
 }
 
-.table{
+.table {
     align-content: center;
     color: black;
-    font-family: Papyrus,sans-serif;
+    font-family: Papyrus, sans-serif;
 }
 
-.lowerSection{
+.lowerSection {
     align-content: center;
     background: linear-gradient(to right, white, cornflowerblue);
 }
@@ -171,14 +171,65 @@ div:hover p {
     text-align: center;
 }
 
-.passport,.rate {
-    font-family: Papyrus,sans-serif;
+.passport, .rate {
+    font-family: Papyrus, sans-serif;
     background: linear-gradient(to left, white, cornflowerblue);;
 }
 
-.youtube{
-    width:220px;
-    height:200px;
+.youtube {
+    width: 220px;
+    height: 200px;
 }
 
+#f1, #f3, #f4, #f5 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    justify-content: space-between;
+}
+
+#f1 {
+    border-bottom: dodgerblue solid 5px;
+    border-right: dodgerblue solid 5px;
+    float: left;
+    margin-left: 550px;
+}
+
+#f2 {
+    border: dodgerblue solid 8px;
+    width: 150px;
+    height: 150px;
+
+}
+
+#f3 {
+    border-top: dodgerblue solid 5px;
+    border-left: dodgerblue solid 5px;
+
+
+}
+
+#f4 {
+    border-bottom: dodgerblue solid 5px;
+    border-left: dodgerblue solid 5px;
+}
+
+#f5 {
+    border-top: dodgerblue solid 5px;
+    border-right: dodgerblue solid 5px;
+    float: left;
+    margin-left: 550px;
+
+}
+
+.fox{
+    position: relative;
+}
+
+#f2 {
+    position: absolute;
+    top: 75px;
+    left: 625px;
+    z-index: 2;
+}
 
