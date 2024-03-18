@@ -1,0 +1,112 @@
+/* Basic styles */
+body {
+    font-family: "Times New Roman",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto auto auto auto; /* Defines the rows of the grid */
+}
+
+.space {
+    height: 10px;
+}
+
+/* Introduction section */
+.intro {
+    background: linear-gradient(to right, white, silver, whitesmoke);
+    text-align: center;
+    padding: 10px;
+    text-decoration-color: silver;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Video section */
+.video iframe {
+    border: none;
+}
+
+/* Two-column sections */
+.grid.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+    padding: 20px;
+}
+
+/* Text styles */
+#left1text {
+    color: black;
+    font-family: Papyrus,sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, royalblue, midnightblue, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .grid.two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
+
+/* Flexbox for inputs */
+.flex-inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+
+.flex-photos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Footer Section */
+footer {
+    outline-color: black;
+    outline-style: solid;
+
+}
+
+.space + .space {
+    outline-color: silver;
+}
+
+
+.video {
+    object-fit: fill;
+}
+
+#p1,#p2,#p3{
+
+    width: 400px;
+    height: 400px;
+
+}
