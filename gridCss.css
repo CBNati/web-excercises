@@ -1,20 +1,18 @@
-/* Basic styles */
 body {
-    font-family: "Times New Roman",sans-serif;
+    font-family: "Times New Roman", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .grid {
     display: grid;
-    grid-template-rows: auto 1fr auto auto auto auto auto auto; /* Defines the rows of the grid */
+    grid-template-rows: auto 1fr auto auto auto auto auto auto;
 }
 
 .space {
     height: 10px;
 }
 
-/* Introduction section */
 .intro {
     background: linear-gradient(to right, white, silver, whitesmoke);
     text-align: center;
@@ -25,18 +23,17 @@ body {
 .intro h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: darkblue;
 }
 
 .intro p {
     font-size: 1.2em;
 }
 
-/* Video section */
 .video iframe {
     border: none;
 }
 
-/* Two-column sections */
 .grid.two-columns {
     grid-template-columns: 1fr 1fr;
 }
@@ -45,10 +42,9 @@ article {
     padding: 20px;
 }
 
-/* Text styles */
 #left1text {
     color: black;
-    font-family: Papyrus,sans-serif;
+    font-family: Papyrus, sans-serif;
 }
 
 .gradient-text {
@@ -58,8 +54,8 @@ article {
     -webkit-text-fill-color: transparent;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+
+@media (max-width: 700px) {
     .grid.two-columns {
         grid-template-columns: 1fr;
     }
@@ -71,9 +67,26 @@ article {
     .intro p {
         font-size: 1em;
     }
+
+    .video iframe {
+        height: 300px;
+    }
+
+    .flex-photos img {
+        display: none;
+    }
 }
 
-/* Flexbox for inputs */
+@media (max-width: 600px) {
+    .intro {
+        background-color: lightgray;
+    }
+}
+
+.intro > p ~ .interactive-button {
+    border-bottom-color: royalblue;
+}
+
 .flex-inputs {
     display: flex;
     justify-content: space-around;
@@ -88,25 +101,60 @@ article {
     padding: 20px;
 }
 
-/* Footer Section */
+
 footer {
     outline-color: black;
     outline-style: solid;
-
 }
 
 .space + .space {
     outline-color: silver;
 }
 
-
 .video {
     object-fit: fill;
 }
 
-#p1,#p2,#p3{
-
+#p1, #p2, #p3 {
     width: 400px;
     height: 400px;
-
 }
+
+.interactive-button, .interactive-button2 {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.interactive-button2:hover {
+    color: royalblue;
+    background-color: midnightblue;
+    justify-items: center;
+}
+
+.intro {
+    position: relative;
+}
+
+.intro h1:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: royalblue;
+    position: absolute;
+    bottom: -10px;
+}
+
+.video ~ .space ~ .grid.two-columns {
+    border-bottom-color: silver;
+    border-bottom: solid;
+    border-bottom-color: whitesmoke;
+}
+
+
+
